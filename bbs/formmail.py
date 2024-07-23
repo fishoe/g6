@@ -17,7 +17,7 @@ templates = UserTemplates()
 templates.env.globals["captcha_widget"] = captcha_widget
 
 
-@router.get("/formmail/{mb_id}")
+@router.get('/formmail/{mb_id}')
 async def formmail(
     request: Request,
     db: db_session,
